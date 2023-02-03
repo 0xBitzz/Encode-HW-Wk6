@@ -1,0 +1,121 @@
+{
+    "name": "Vote",
+    "methods": [
+        {
+            "name": "create_asset",
+            "args": [
+                {
+                    "type": "string",
+                    "name": "asset_name"
+                },
+                {
+                    "type": "uint64",
+                    "name": "total_supply"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "optin_asset",
+            "args": [
+                {
+                    "type": "axfer",
+                    "name": "txn"
+                },
+                {
+                    "type": "asset",
+                    "name": "aid"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "transfer_asset",
+            "args": [
+                {
+                    "type": "account",
+                    "name": "receiver"
+                },
+                {
+                    "type": "uint64",
+                    "name": "amount"
+                },
+                {
+                    "type": "asset",
+                    "name": "aid"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "get_asset_bal",
+            "args": [
+                {
+                    "type": "account",
+                    "name": "account"
+                },
+                {
+                    "type": "asset",
+                    "name": "asset_id"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "get_asset_id",
+            "args": [],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "setup",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "reg_begin"
+                },
+                {
+                    "type": "uint64",
+                    "name": "reg_end"
+                },
+                {
+                    "type": "uint64",
+                    "name": "vote_begin"
+                },
+                {
+                    "type": "uint64",
+                    "name": "vote_end"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "cast_vote",
+            "args": [
+                {
+                    "type": "string",
+                    "name": "choice"
+                },
+                {
+                    "type": "asset",
+                    "name": "asset_id"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        }
+    ],
+    "networks": {}
+}

@@ -1,0 +1,5 @@
+/venv
+/__pycache__
+/sandbox
+.DS_Store
+/.pytest_cache
